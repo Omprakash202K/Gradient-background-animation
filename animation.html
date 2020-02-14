@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gradient-background-animation </title>
+    <!--Custom css-->
+    <link  href="animation.css" rel="stylesheet">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <!--Custom script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <!--animation code-->
+    <div class="div1">
+        
+<p>Default Background set for new background click on A B C D.</p>
+<div class="border"> </div>
+<div class="col-1">
+a
+</div>
+
+<div class="col-2">
+b
+</div>
+
+<div class="col-3">
+c
+</div>
+
+<div class="col-4">
+d
+</div>
+ 
+
+<button class="reset_btn">Reset background</button>
+
+    </div>
+
+
+<!--scriptfor animation-->
+ 
+<script>
+$(document).ready(function(){
+   
+    $(".reset_btn").click(function(){
+        $("p").html('Default Background set for new background click on A B C D.').animate({left: '0%'});
+          $(".border").animate({left: '0%'});
+    $(".div1").removeClass('bg-1');
+   $(".div1").removeClass('bg-2');
+    $(".div1").removeClass('bg-3');
+    $(".div1").removeClass('bg-4');
+    })
+
+  $(".col-1").click(function(){
+    $(".div1").addClass('bg-1');
+    $(".border").animate({left: '0%'});
+    $("p").html();
+     $("p").html('Set Background for A.').animate({left: '3%'});
+    $(".div1").removeClass('bg-2');
+    $(".div1").removeClass('bg-3');
+    $(".div1").removeClass('bg-4');
+  });
+  $(".col-2").click(function(){
+    $("p").html();
+    $("p").html('Set Background for B.').animate({left: '26.5%'});
+    $(".border").animate({left: '25%'});
+    $(".div1").addClass('bg-2');
+    $(".div1").removeClass('bg-1');
+    $(".div1").removeClass('bg-3');
+    $(".div1").removeClass('bg-4');
+  
+  });
+  });
+  $(".col-3").click(function(){
+    $("p").html();
+    $("p").html('Set Background for C. ').animate({left: '51.5%'});
+    $(".border").animate({left: '50%'});
+    $(".div1").addClass('bg-3');
+    $(".div1").removeClass('bg-1');
+    $(".div1").removeClass('bg-2');
+    $(".div1").removeClass('bg-4');
+  });
+  $(".col-4").click(function(){
+    $("p").html();
+    $("p").html('Set Background for D. ').animate({left: '76.5%'});
+    $(".border").animate({left: '75%'});
+    $(".div1").addClass('bg-4');
+    $(".div1").removeClass('bg-1');
+    $(".div1").removeClass('bg-3');
+    $(".div1").removeClass('bg-2');
+  });
+ 
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+
+/*Font*/
+
+html,body{
+ margin: 0px;
+ padding: 0px; height: 100%;
+ max-height: 100%; overflow: hidden;
+ 
+}
+*{
+    font-family: 'Poppins', sans-serif; text-transform: uppercase;
+  }
+
+.col-1,.col-2,.col-3,.col-4{
+    --width: 100%;
+    float: left;  
+    --part:4; position: relative;
+    top: calc( var(--width) / 2.5);
+    text-align: center;
+    text-transform: uppercase; cursor: pointer;
+    font-size: calc(var(--width) + 500%); transition: 1s all;
+    width: calc( var(--width) / var(--part));
+    opacity: 0.5;
+ 
+}
+
+.col-1:hover,.col-2:hover,.col-3:hover,.col-4:hover{
+    opacity: 1; text-transform: lowercase;  
+   
+    /* transform: perspective(800);  transform: rotateY(50deg); */
+}
+.col-1{
+    background: #0a0a0a
+}.col-2{
+    background: #000;
+}.col-3{
+    background: #0a0a0a
+}
+.col-4{
+    background: #000;
+}
+
+ 
+
+.div1{
+position: relative;
+height: 100%;
+background: #1A2980;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color:#fff;  text-transform: uppercase;
+     
+}
+
+.bg-1{
+    background: #f12711;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.bg-2{
+    background: #1a2a6c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.bg-3{
+    background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.bg-4{
+    background: #16A085;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+p{
+    font-size: 22px;
+    padding: 17px;
+    position: absolute;
+}
+.Sub{
+    background: #6d3131;
+    padding: 0px 15px;
+    border-radius: 34px;
+}
+.reset_btn{
+    position: fixed;
+    right: 8px;
+    bottom: 5px;
+    /* padding: 3px; */
+    border: none;
+    border-radius: 23px;
+    padding: 9px; opacity: 0.5; cursor: pointer;
+}
+.border{
+    width: 25%;
+    height: 7px;
+    background: white;
+    position: absolute;
+    top: 39%;
+}
+
+/*neon Button*/
+a{
+    text-decoration: none; position: relative;  padding: 15px 30px; overflow: hidden; transition: 0.2s all;  color: #fff; text-transform: uppercase; letter-spacing: 4px;
+}
+a:hover{
+    background: #2196F3;
+    box-shadow: 0px 0px 10px #2196F3, 0px 0px 40px #2196F3, 0px 0px 80px #2196F3;
+}
